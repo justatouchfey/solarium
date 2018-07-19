@@ -20,6 +20,64 @@ define teleport = ImageDissolve("imagedissolveteleport.png", 1.0, 0)
 image sun_one = Image("sun_one.png", xalign=0.7)
 image sun_two = Image("sun_two.png", xalign=0.7)
 
+# ATL for scrolling screen object. In this case, credits roll.
+# Speed is the time for object to move up from initial ypos to finish ypos.
+
+transform credits_scroll(speed):
+    ypos 400
+    linear speed ypos -400
+
+## Credits screen.
+
+screen credits():
+    style_prefix "credits"
+
+    add "#000"
+
+    frame at credits_scroll(5.0):
+        background None
+        xalign 0.5
+
+        vbox:
+            label "Credits"
+
+            null height 20
+
+            hbox:
+                text "Script"
+                text "Ciel Sainte-Marie"
+
+            hbox:
+                text "Music"
+                text "Kevin: https://incompetech.com"
+
+            hbox:
+                text "Aidana Sprite"
+                text "Charamel: https://charamel.itch.io/"
+
+            hbox:
+                text "Game Icons"
+                text "https://game-icons.net"
+
+            hbox:
+                text "Scrolling Credits Code:"
+                text "Divona"
+
+            hbox:
+                text "Sun Sprite"
+                text "Meagan Trott: http://www.meagantrott.com"
+
+
+style credits_hbox:
+    spacing 40
+    ysize 30
+
+style credits_label:
+    xalign 0.5
+
+style credits_text:
+    xalign 0.5
+
 # The game starts here.
 
 label start:
@@ -29,6 +87,7 @@ label start:
     # images directory to show it.
 
     scene livingroombg
+    play music "vanishing.mp3"
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -277,6 +336,8 @@ label continue:
 
     hide aidana_happy
     with teleport
+
+    call screen credits
 
     # This ends the game.
 
