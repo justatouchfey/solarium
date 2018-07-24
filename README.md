@@ -24,9 +24,13 @@ Once completed, the game will run standalone without the developers software. If
 This game is based in the STEEMPUNK-NET (https://www.steempunk.net) universe. Steempunk is a browser extension that runs a MMORPG based on the Steem blockchain, using Steemit.com. All characters will be created by Steempunk players. While playable without participation in the STEEMPUNK-NET project, this game is meant to be a way for players to get more into the universe and enjoy more interactivity with the pre-existing game.
 
 
-Contributing
+How to Contribute
 ========================================================
 To contribute to the development of the game’s code, please familiarize yourself with Ren’Py, the STEEMPUNK-NET project, and then get in contact with me through email (thefairypark at gmail) or discord (user: ciel/justatouchfey#7548). You can also find me through the Steempunk Official Discord: https://discord.gg/DAHYPqZ
+
+Art contributions will be accepted at a later date of development, announced through https://steemit.com/@thefairypark.
+
+To contribute a character, please fill out the profile template in the GitHub.  Once you are done filling out your character profile, please get in contact with me through email (thefairypark at gmail) or discord (user: ciel/justatouchfey#7548). You can track me down through the Steempunk Official Discord: https://discord.gg/DAHYPqZ
 
 Current information about the stage of development and needs will be available at https://steemit.com/@thefairypark
 
